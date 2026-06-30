@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微信支付 - 商户收款平台</title>
+
+<style>
+:root {
+  --primary: #07c160;
+  --bg-dark: #0f172a;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-sub: #64748b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  font-family: "PingFang SC","Microsoft YaHei",system-ui,-apple-system;
+}
+
+.pay-card {
+  width: 380px;
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 40px 36px 32px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 14px;
+  background: var(--primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo svg { width: 30px; height: 30px; fill: #fff; }
+
+h1 {
+  font-size: 22px;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 26px;
+}
+
+/* 二维码区域 */
+.qr-box {
+  padding: 14px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  display: inline-block;
+}
+.qr-box img {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* 金额 & 提示 */
+.amount {
+  margin-top: 22px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.tip {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.8;
+}
+.tip span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* 底部 */
+footer {
+  margin-top: 26px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="pay-card">
+  <!-- 微信Logo -->
+  <div class="logo">
+    <svg viewBox="0 0 24 24">
+      <path d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.73 4.66L4 17l3.14-1.57A8 8 0 0 0 9.5 14c4.14 0 7.5-2.69 7.5-6S13.64 4 9.5 4zm-1 7.5H7v-1.5h1.5V9H10v1.5H11.5V12H10v1.5H8.5V12H7.5v-.5zm5 0h-1.5v-1.5H14V9h1.5v1.5H17v1.5h-1.5V12h-1.5v.5zM22 14c0-2.21-2.24-4-5-4s-5 1.79-5 4 2.24 4 5 4c.83 0 1.61-.13 2.34-.37L20 19l-.43-2.13A3.9 3.9 0 0 0 22 14z"/>
+    </svg>
+  </div>
+
+  <h1>微信扫码支付</h1>
+  <p class="subtitle">商户收款 · 官方安全通道</p>
+
+  <!-- 二维码（本地） -->
+  <div class="qr-box">
+  <img src="qrcode/wechat_qrcode.JPG" alt="微信收款二维码">
+</div>
+
+  <div class="amount">¥ 50.00</div>
+
+  <p class="tip">
+    打开 <span>微信 App</span><br>
+    点击「扫一扫」完成支付
+  </p>
+
+  <footer>© 商户支付平台 · 安全加密</footer>
+</div>
+
+</body>
+</html>
