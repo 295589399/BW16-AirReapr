@@ -1,3 +1,7 @@
+<img width="3024" height="4032" alt="全触摸展示图 (2)" src="https://github.com/user-attachments/assets/1dd5f6ed-a107-4294-bef8-f3fc1023213e" />
+<img width="3024" height="4032" alt="全触摸展示图 (1)" src="https://github.com/user-attachments/assets/505af773-ffa2-41b9-a421-e0c8ba016e92" />
+<img width="3024" height="4032" alt="全触摸展示图 (4)" src="https://github.com/user-attachments/assets/f7eaea1d-1fbb-4708-b4f3-50ad75db5e05" />
+<img width="3024" height="4032" alt="全触摸展示图 (3)" src="https://github.com/user-attachments/assets/a81b7857-222e-46e1-8dc2-62cada1ad0d7" />
 # BW16-AirReapr
 BW16-AirReapr
 还可以扩展的功能
